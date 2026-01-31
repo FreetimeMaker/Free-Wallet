@@ -18,22 +18,22 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 
-        Properties properties = new Properties()
-        File localProps = new File(rootDir.absolutePath, "local.properties")
+        val properties = java.util.Properties()
+        val localProps = File(rootDir.absolutePath, "local.properties")
         if (localProps.exists()) {
-            properties.load(localProps.newDataInputStream())
+            properties.load(localProps.inputStream())
         } else {
-            println "local.properties not found"
+            println("local.properties not found")
         }
         maven {
             url = uri("https://maven.pkg.github.com/trustwallet/wallet-core")
             credentials {
-                username = properties.getProperty("gpr.user") as String?: System.getenv("GITHUB_USER")
-                password = properties.getProperty("gpr.key") as String?: System.getenv("GITHUB_TOKEN")
+                username = properties.getProperty("gpr.user") ?: System.getenv("GITHUB_USER")
+                password = properties.getProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }
 }
 
 rootProject.name = "FreetimeWallet"
-include ':app'
+include(":app")

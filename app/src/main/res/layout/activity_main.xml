@@ -11,7 +11,8 @@
         android:gravity="top|center_horizontal"
         android:orientation="vertical"
         android:paddingTop="24dp"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:layout_gravity="bottom">
 
         <!-- 🔵 Header Section -->
         <com.google.android.material.textview.MaterialTextView
@@ -84,16 +85,28 @@
             android:background="#ff0000ff"
             android:gravity="center" />
 
+        <!-- 🟡 Address Display (ADDED) -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/addressDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin Address: Not generated yet"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:visibility="gone" />
+
         <!-- ⚙️ Bottom Navigation -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/bottom_nav_menu_main"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu_main"
+            android:layout_marginTop="32dp" />
 
     </LinearLayout>
 </ScrollView>
