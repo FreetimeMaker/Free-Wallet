@@ -1,26 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Freetime Wallet</string>
-    <string-array name="coin_array">
-        <item>Bitcoin</item>
-        <item>Bitcoin Cash</item>
-        <item>Litecoin</item>
-        <item>Ethereum</item>
-    </string-array>
-    <string name="welcome_text">Welcome to Freetime Wallet</string>
-    <string name="info_text">Login Using Your existing Passphrase or Generate one</string>
-    <string name="gen_pass">Generate a Passphrase</string>
-    <string name="enter_pass">Enter your passphrase here</string>
-    <string name="login_btn">Login Using Your Passphrase</string>
-    <string name="coin_graph">Prices will appear here</string>
-    <string name="bnmm_login">Login</string>
-    <string name="bnmm_graph">Currencies</string>
-    <string name="bnm_logout">Logout</string>
-    <string name="bnm_dash">Dasboard</string>
-    <string name="bnm_swap">Swap</string>
-    <string name="dash_wel_tex">Welcome to your Freetime Wallet</string>
-    <string name="dash_address">Address will appear here</string>
-    <string name="bnm_pf">Pump.Fun</string>
-    <string name="bnm_web3">Web3</string>
-    <string name="bnm_settings">Settings</string>
+    <string name="app_name">Wallet</string>
 </resources>

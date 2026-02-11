@@ -52,10 +52,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
-    // Trust Wallet Core - benötigt gültigen GitHub Token in gradle.properties
-    // Verfügbare Versionen: https://github.com/trustwallet/wallet-core/packages/700258
-    // Falls Sync fehlschlägt: GitHub Token in gradle.properties aktualisieren (siehe TRUST_WALLET_SETUP.md)
-    implementation("com.trustwallet:wallet-core:4.3.6")
     
     // Compose BOM
     implementation(platform(libs.compose.bom))
