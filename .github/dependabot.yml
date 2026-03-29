@@ -1,0 +1,14 @@
+---
+version: 2
+updates:
+  # Gradle Dependencies
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "12:00"
+    open-pull-requests-limit: 100
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
