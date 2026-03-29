@@ -10,7 +10,7 @@ activity = "1.12.2"
 constraintlayout = "2.2.1"
 composeBom = "2024.12.01"
 composeActivity = "1.10.1"
-composeNavigation = "2.8.5"
+composeNavigation = "2.9.7"
 composeLifecycle = "2.8.7"
 coreKtx = "1.17.0"
 
